@@ -1,0 +1,32 @@
+﻿<h4>Search For A Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div class="form-group">
+                <label for="SearchTitle" class="control-label">Title</label>
+                <input name ="SearchTitle" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchAuthor" class="control-label">Author</label>
+                <input name="SearchAuthor" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchYear" class="control-label">Year Of Release</label>
+                <input name="SearchYear" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchGenre" class="control-label">Genre</label>
+                <input name="SearchGenre" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
